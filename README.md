@@ -4,12 +4,6 @@
 
 ---
 
-## Getting Started
-
-Ready to make Clockwork Banker tick on your machine? Head over to our detailed **[Setup Guide](Setup.md)** for step-by-step instructions.
-
----
-
 ## What is this thing?
 
 Ever wondered what would happen if a Swiss watch had a baby with a bank vault? Well, wonder no more! Clockwork Banker is here to manage your gear needs with the precision of a metronome and the reliability of that one friend who always pays you back (we all have one, right?).
