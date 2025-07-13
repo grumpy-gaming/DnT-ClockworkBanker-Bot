@@ -1,50 +1,53 @@
-```markdown
-# DnT Clockwork Banker: Discord Bot
+DnT Clockwork Banker: Discord Bot
 
 This guide provides comprehensive instructions to set up and run the DnT Clockwork Banker Discord bot. This bot streamlines guild bank item requests, manages new member stimulus claims, and provides essential communication tools within your Discord server.
 
----
+Features
 
-## ✨ Features
+    Streamlined Item Requests: Members can use a user-friendly modal (pop-up form) to request multiple items, ensuring standardized request formats for bank staff.
 
-* **Streamlined Item Requests:** Members can use a user-friendly modal (pop-up form) to request multiple items, ensuring standardized request formats for bank staff.
-* **Persistent Banker Actions:** Staff interaction buttons (`Mark Fulfilled`, `Deny Request`, `Manage Items`) appear on a dedicated message in the request thread.
-* **Partial Fulfillment Tracking:** Staff can mark individual items as fulfilled via a dropdown menu, with automatic status updates (`PARTIALLY FULFILLED`, `FULLY FULFILLED`).
-* **Automated Status Updates:** Requests are updated in real-time in Discord threads (via new status messages and name changes) and DMs to the requester.
-* **New Member Stimulus:** New members can claim a one-time plat stimulus, tracked via Firebase and managed by authorized staff with role assignment.
-* **Role-Based Permissions:** Restricts sensitive actions to designated staff roles.
-* **Firebase Integration:** Uses Google Firestore for robust data storage and retrieval of requests and stimulus claims.
+    Persistent Banker Actions: Staff interaction buttons (Mark Fulfilled, Deny Request, Manage Items) appear on a dedicated message in the request thread.
 
----
+    Partial Fulfillment Tracking: Staff can mark individual items as fulfilled via a dropdown menu, with automatic status updates (PARTIALLY FULFILLED, FULLY FULFILLED).
 
-## 🚀 Prerequisites
+    Automated Status Updates: Requests are updated in real-time in Discord threads (via new status messages and name changes) and DMs to the requester.
+
+    New Member Stimulus: New members can claim a one-time plat stimulus, tracked via Firebase and managed by authorized staff with role assignment.
+
+    Role-Based Permissions: Restricts sensitive actions to designated staff roles.
+
+    Firebase Integration: Uses Google Firestore for robust data storage and retrieval of requests and stimulus claims.
+
+Prerequisites
 
 Before you begin, ensure you have the following installed on your machine (Raspberry Pi recommended for hosting):
 
-* **Git**: For cloning the repository.
-    * [Download Git](https://git-scm.com/downloads)
-* **Node.js (LTS version)**: The JavaScript runtime environment. `npm` (Node Package Manager) comes with Node.js.
-    * [Download Node.js](https://nodejs.org/en/download/) (Choose the LTS version)
-    * **Recommended for Linux (like RPi):** Use `nvm` (Node Version Manager) for easy installation and management:
-        ```bash
+    Git: For cloning the repository.
+
+        Download Git
+
+    Node.js (LTS version): The JavaScript runtime environment. npm (Node Package Manager) comes with Node.js.
+
+        Download Node.js (Choose the LTS version)
+
+        Recommended for Linux (like RPi): Use nvm (Node Version Manager) for easy installation and management:
+        Bash
+
         curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
         source ~/.bashrc # or ~/.zshrc
         nvm install --lts
         nvm use --lts
         nvm alias default --lts
-        ```
 
----
-
-## 🛠️ Step-by-Step Setup
+Step-by-Step Setup
 
 Follow these instructions to get the DnT Clockwork Banker bot up and running.
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 First, get a copy of the bot's code to your local machine (e.g., your Raspberry Pi):
+Bash
 
-```bash
 git clone https://github.com/grumpy-gaming/DnT-ClockworkBanker-Bot.git
 cd DnT-ClockworkBanker-Bot
 
@@ -171,7 +174,7 @@ node index.js
 
 The bot should log in successfully and be online in your Discord server.
 
-📖 Usage
+Usage
 
 Once the bot is online:
 
@@ -195,7 +198,7 @@ Once the bot is online:
 
         Fulfilled and Denied requests will have their thread names updated ([FULFILLED], [DENIED]) and the original message reacted with ✅ (for fulfilled).
 
-🐛 Troubleshooting
+Troubleshooting
 
     Bot not coming online / SyntaxError / Cannot find module:
 
@@ -233,7 +236,7 @@ Once the bot is online:
 
         This is often due to Discord API timing/caching issues with new forum threads. Ensure your bot has Add Reactions permission. The core functionality (Firebase/DMs) still works in this scenario.
 
-❓ Getting Help
+Getting Help
 
 If you encounter any issues not covered here, or need further assistance, please reach out to the bot maintainers in your guild or check the project's GitHub Issues (if you create issues there). Provide:
 
@@ -244,3 +247,16 @@ If you encounter any issues not covered here, or need further assistance, please
     The exact steps you followed.
 
     Any error messages you received in your terminal.
+    --- END README CONTENT ---
+
+Instructions for you:
+
+    Copy all the text between (and including) the --- START README CONTENT --- and --- END README CONTENT --- lines.
+
+    Paste it directly into your README.md file (e.g., in GitHub's web editor, or into nano README.md on your RPi).
+
+    Crucially: You will then need to manually add three backticks () on a new line at the very beginning of the content you pasted, and **three backticks** () on a new line at the very end of the content you pasted. Also, add the word markdown right after the first three backticks, like this:
+    Markdown
+
+# DnT Clockwork Banker: Discord Bot
+... (all the content you pasted) ...
