@@ -1,0 +1,19 @@
+# Node.js dependencies
+node_modules/
+.env
+
+# Firebase service account keys (highly sensitive)
+firebase-keys/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
